@@ -71,7 +71,7 @@ input {
 
 .password-wrapper input {
     width: 100%;
-    padding-right: 40px; /* ruang untuk icon */
+    padding-right: 40px; 
 }
 
 .password-wrapper i {

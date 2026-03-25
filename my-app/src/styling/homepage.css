@@ -178,4 +178,25 @@
     font-size: 1.7rem;
   }
 
+  .container2 {
+    justify-content: center;
+  }
+
+.container2-nama {
+  align-items: center;
+  padding: 10px;
+}
+
+.container2 form {
+  gap: 7px;
+}
+
+.container2-nama h2 {
+  padding : 10px;
+}
+
+.data-karyawan {
+  padding: 10px;
+}
+
 }

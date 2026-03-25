@@ -10,7 +10,7 @@ function Crud() {
   const [list, setList] = useState([]);
   const [editId, setEditId] = useState(null);
 
-  // ✅ Ambil data dari localStorage saat pertama load
+  // Ambil data dari localStorage
   useEffect(() => {
     const data = localStorage.getItem("dataKaryawan");
     if (data) {
@@ -18,7 +18,7 @@ function Crud() {
     }
   }, []);
 
-  // ➕ CREATE
+  //  CREATE
   const handleAdd = () => {
     if (!nama || !jabatan) return;
 
@@ -37,7 +37,7 @@ function Crud() {
     setJabatan("");
   };
 
-  // ❌ DELETE
+  // DELETE
   const handleDelete = (id) => {
     const filtered = list.filter((item) => item.id !== id);
     setList(filtered);
@@ -45,14 +45,14 @@ function Crud() {
     localStorage.setItem("dataKaryawan", JSON.stringify(filtered));
   };
 
-  // ✏️ EDIT
+  // EDIT
   const handleEdit = (item) => {
     setNama(item.nama);
     setJabatan(item.jabatan);
     setEditId(item.id);
   };
 
-  // 🔄 UPDATE
+  //  UPDATE
   const handleUpdate = () => {
     const updated = list.map((item) =>
       item.id === editId ? { ...item, nama, jabatan } : item
@@ -71,7 +71,6 @@ function Crud() {
       <h1>CRUD Karyawan</h1>
 
       <div className="crud-content">
-        {/* FORM */}
         <div className="crud-form">
           <InputField
             placeholder="Nama"
@@ -90,7 +89,6 @@ function Crud() {
           </button>
         </div>
 
-        {/* LIST */}
         <div className="list-data">
           <ul>
             {list.map((item) => (
