@@ -1,5 +1,5 @@
 .container-crud {
-    background-color: #161612;
+    background-color: #161622;
     height: 100vh;
     padding-top: 20px;
     color: white;
@@ -27,9 +27,19 @@
     padding: 10px 20px;
     background-color: #3a3e3a;
     color: white;
-    border-radius: 15px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .list-data {
     padding: 20px;
+}
+
+.list-data ul li { 
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.list-data ul li button {
+    margin-left: 10px;
 }

@@ -3,14 +3,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: Inter, sans-serif;
 }
 
 .homepage {
-    background-color: #161612;
+    background-color: #161622;
     color: white;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.header {
+  font-size: 13px;
 }
 
 .link-crud {
@@ -24,7 +30,8 @@
 
 .container {
     display: flex;
-    height: 100vh;
+    height: auto;
+    min-height: 70vh;
     width: 100%;
 }
 
@@ -37,9 +44,13 @@
 }
 
 .container-text p {
-    font-size: 3rem;
+    font-size: 48px;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+.deskrip {
+  font-size: 20px;
 }
 
 .container-gambar {
@@ -51,11 +62,12 @@
 
 .container2 {
     display: flex;
+    flex-direction: row;
     padding-top: 20px;
     justify-content: flex-start;
     width: 100%;
-    height: 100vh;
-    background-color: #161612;
+    min-height: 50%;
+    background-color: #161622;
 }
 
 .container2-nama {
@@ -83,6 +95,10 @@
 
 .container2-nama h2 {
   padding : 20px;
+}
+
+.data-karyawan {
+  padding: 20px;
 }
 
 /* ================= TABLET ================= */
